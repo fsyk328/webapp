@@ -8,9 +8,9 @@ import org.springframework.web.servlet.view.RedirectView;
 @Controller
 public class IndexController {
 
-    @RequestMapping("/")
-    public View index() {
-        return new RedirectView("/ticket/list", true);
+   @RequestMapping("/")
+    public String index() {
+        return "index";
     }
     
     @RequestMapping("login")
