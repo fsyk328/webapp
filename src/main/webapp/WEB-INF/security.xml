@@ -20,7 +20,7 @@
         <intercept-url pattern="/ticket/**" access="hasAnyRole('USER','ADMIN')" />
         <form-login login-page="/login"
                     authentication-failure-url="/login?error" />
-        <logout logout-success-url="/login?logout"
+        <logout logout-success-url="/"
                 invalidate-session="true"
                 delete-cookies="JSESSIONID" />
         <remember-me key="custSupportSecret"
